@@ -4,151 +4,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfoli</title>
-    <link rel="stylesheets" href="style.css">
+    <title>Portfolio - Abhinav Kalluri</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
-    <!-- navigation -->
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-container">
-                <ul>
+                <div class="logo">AK</div>
+                <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#qalifications">Qualification</a></li>
+                    <li><a href="#qualifications">Qualification</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#Projects">projects</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-
         </div>
-
     </nav>
 
-    <!-- Hero section -->
-
-    <section id="Home" class="Hero">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
         <div class="container">
-            <div class="Hero-content">
-                <div class="Hero-text">
+            <div class="hero-content">
+                <div class="hero-text">
                     <h1>Abhinav Kalluri</h1>
-                    <p class="subtitle">EElectronic/communication Student Intrested in web-develeopment</p>
-                    <p>Passionate front-end developer with a strong foundation in HTML, CSS, and JavaScript, and a keen
-                        eye for creating clean, responsive, and user-friendly web interfaces. Currently pursuing my
-                        B.Tech in Electronics and Communication Engineering, I blend my technical background with
-                        creative problem-solving to build engaging digital experiences. I’m always eager to learn new
-                        technologies, explore modern design trends, and take on challenging projects that push my skills
-                        to the next level.</p>
+                    <p class="subtitle">Electronics & Communication Student interested in Web Development</p>
+                    <p>Passionate front-end developer with a strong foundation in HTML, CSS, and JavaScript,
+                        and a keen eye for creating clean, responsive, and user-friendly web interfaces.
+                        Currently pursuing my B.Tech in Electronics and Communication Engineering, I blend my
+                        technical background with creative problem-solving to build engaging digital experiences.
+                        I’m always eager to learn new technologies, explore modern design trends, and take on
+                        challenging projects that push my skills to the next level.</p>
 
-                    <div class="cta-btn">
-                        <a href="#projzzects">
-                            <i class="fas fa-code"></i>
-                            View my Work
-                        </a>
-
-                        <a href="#contact">
-                            <i class="fas fa-envelope"></i>
-                            Get in touch
-                        </a>
-
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn btn-primary"><i class="fas fa-code"></i> View my Work</a>
+                        <a href="#contact" class="btn btn-secondary"><i class="fas fa-envelope"></i> Get in Touch</a>
                     </div>
-
-
                 </div>
-                <div>
-                    <img src="#img1" alt="abhinav">
+                <div class="hero-image">
+                    <img src="images/profile.jpg" alt="Abhinav">
                 </div>
-
             </div>
-
         </div>
-        <!-- Group section -->
     </section>
 
+    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title fade-in">About Me</h2>
             <div class="about-content">
-                <div class="abou-image fade-in">
-                    <img src="#img2" alt="Kalluri">
+                <div class="about-image fade-in">
+                    <img src="images/about.jpg" alt="Abhinav Kalluri">
                 </div>
                 <div class="about-text fade-in">
-                    <h3>Driven by innovation and conistant learning</h3>
-                    <p>Very dedicated and commited to the work</p>
-                    <p>when i'm not coding you will find me learning something.</p>
+                    <h3>Driven by Innovation and Consistent Learning</h3>
+                    <p>Very dedicated and committed to the work.</p>
+                    <p>When I'm not coding, you’ll find me learning something new.</p>
 
                     <div class="stats">
                         <div class="stat-item">
                             <div class="stat-number">15+</div>
-                            <div class="stat-label">Projects completed</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number">15+</div>
-                            <div class="stat-label">Projects completed</div>
+                            <div class="stat-label">Projects Completed</div>
                         </div>
                         <div class="stat-item">
                             <div class="stat-number">2+</div>
-                            <div class="stat-label">years experience</div>
+                            <div class="stat-label">Years Experience</div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- Qualification Section -->
     <section class="qualifications" id="qualifications">
         <div class="container">
             <h2 class="section-title fade-in">Education & Qualification</h2>
-            <div class="qaul-grid">
-                <div class="qaul-grid fade-in">
+            <div class="qual-grid">
+                <div class="qual-card fade-in">
                     <i class="fas fa-graduation-cap qual-icon"></i>
-                    <h3>B-Tech in Electronics and Communication Engineering</h3>
+                    <h3>B.Tech in Electronics and Communication Engineering</h3>
                     <div class="institution">Vignan Institute</div>
-                    <div class="year">2023-2027</div>
-                    <p>Revelant courses:Python,etcc</p>
+                    <div class="year">2023 - 2027</div>
+                    <p>Relevant courses: Python, etc.</p>
                 </div>
-                <div class="qaul-card fade-in">
+                <div class="qual-card fade-in">
                     <i class="fas fa-certificate qual-icon"></i>
-                    <h3>Full-Stack,Python</h3>
-                    <div class="institution">Geeks for geeks</div>
+                    <h3>Full-Stack & Python Certification</h3>
+                    <div class="institution">GeeksforGeeks</div>
                     <div class="year">2025</div>
-                    <p>comprehesive certification in Html,cs,js,Python</p>
+                    <p>Comprehensive certification in HTML, CSS, JS, Python.</p>
                 </div>
-                <div class="qaul-grid fade-in">
+                <div class="qual-card fade-in">
                     <i class="fas fa-award qual-icon"></i>
-                    <h3>Hacker-Rank</h3>
-                    <div class="institution">Hackerrank</div>
+                    <h3>HackerRank Achievements</h3>
+                    <div class="institution">HackerRank</div>
                     <div class="year">2024</div>
-                    <p>solved 200+ py problems</p>
+                    <p>Solved 200+ Python problems.</p>
                 </div>
-                <div class="qaul-grid fade-in">
+                <div class="qual-card fade-in">
                     <i class="fas fa-trophy qual-icon"></i>
                     <h3>Dean's List</h3>
-                    <div class="institution">Vignan institute of technologies</div>
+                    <div class="institution">Vignan Institute of Technology</div>
                     <div class="year">2024</div>
-                    <p>won 1st ever 2023 interuniversity cup as a captain</p>
+                    <p>Won 1st ever 2023 Inter-University Cup as a captain.</p>
                 </div>
             </div>
         </div>
-
     </section>
 
-    <!-- skills section -->
+    <!-- Skills Section -->
     <section id="skills" class="skills">
-        <div id="container">
-            <h2 class="section-title fade-in">Skills & technologies</h2>
-            <div class="skii-grid">
-                <div class="skill-categori fade-in">
+        <div class="container">
+            <h2 class="section-title fade-in">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category fade-in">
                     <i class="fas fa-code"></i>
-                    <h3>Programing Language</h3>
+                    <h3>Programming Languages</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
                         <span class="skill-tag">AI</span>
@@ -156,53 +134,52 @@
                         <span class="skill-tag">Full Stack</span>
                     </div>
                 </div>
-                <div class="skill-categori fade-in">
-                    <i class="fas fa-code"></i>
+                <div class="skill-category fade-in">
+                    <i class="fas fa-laptop-code"></i>
                     <h3>Frontend</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">Html</span>
+                        <span class="skill-tag">HTML</span>
                         <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">JS</span>
+                        <span class="skill-tag">JavaScript</span>
                         <span class="skill-tag">Tailwind</span>
                     </div>
                 </div>
-                <div class="skill-categori fade-in">
-                    <i class="fas fa-code"></i>
+                <div class="skill-category fade-in">
+                    <i class="fas fa-server"></i>
                     <h3>Backend</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">node.js</span>
+                        <span class="skill-tag">Node.js</span>
                         <span class="skill-tag">Express.js</span>
                         <span class="skill-tag">Django</span>
-                        <span class="skill-tag">graphql</span>
+                        <span class="skill-tag">GraphQL</span>
                     </div>
                 </div>
-                <div class="skill-categori fade-in">
-                    <i class="fas fa-code"></i>
-                    <h3>Database</h3>
+                <div class="skill-category fade-in">
+                    <i class="fas fa-database"></i>
+                    <h3>Database & Tools</h3>
                     <div class="skill-tags">
-                        <span class="skill-tag">MongoDb</span>
-                        <span class="skill-tag">Postgersql</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
                         <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Aws</span>
+                        <span class="skill-tag">AWS</span>
                     </div>
                 </div>
-
             </div>
         </div>
-
     </section>
+
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="container">
             <h2 class="section-title fade-in">Featured Projects</h2>
-            <div class="project-grid">
+            <div class="projects-grid">
                 <div class="project-card fade-in">
                     <div class="project-image">
-                        <img src="#proj-img" alt="e-commerce website">
+                        <img src="images/project1.jpg" alt="E-commerce Website">
                     </div>
                     <div class="project-content">
-                        <h3>Ecommerce Website</h3>
-                        <p>Clone of swiggy</p>
+                        <h3>E-commerce Website</h3>
+                        <p>Clone of Swiggy with ordering functionality.</p>
                         <div class="project-tech">
                             <span class="tech-tag">React</span>
                             <span class="tech-tag">Node.js</span>
@@ -210,136 +187,80 @@
                             <span class="tech-tag">Stripe</span>
                         </div>
                         <div class="project-links">
-                            <a href="#proj-link"><i class="fas fa-external-link-alt"></i>Live Demo</a>
-                            <a href="#proj-link"><i class="fas fa-external-link-alt"></i>GIT-hub</a>
+                            <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            <a href="#" target="_blank"><i class="fab fa-github"></i> GitHub</a>
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </div>
     </section>
-
     <!-- Hobbies Section -->
-
-    <section class="Hobbies" id="Hobbies">
+    <section class="hobbies" id="hobbies">
         <div class="container">
-            <h2 class="section-title fade-in">Hobbies & Intrests</h2>
+            <h2 class="section-title fade-in">Hobbies & Interests</h2>
             <div class="hobbies-grid">
-                <div class="hobby-item fade-in">
-                    <i class="fas fa-camera"></i>
+                <div class="hobby-item fade-in"> <i class="fas fa-camera"></i>
                     <h3>Photography</h3>
                     <p>Capturing the moments</p>
                 </div>
-                <div class="hobby-item fade-in">
-                    <i class="fab fa-playstation"></i>
+                <div class="hobby-item fade-in"> <i class="fas fa-gamepad"></i>
                     <h3>E-sports</h3>
                     <p>Learning to survive</p>
                 </div>
-                <div class="hobby-item fade-in">
-                    <i class="fas fa-music"></i>
+                <div class="hobby-item fade-in"> <i class="fas fa-music"></i>
                     <h3>Music</h3>
-                    <p>For Refreshment</p>
+                    <p>For refreshment</p>
                 </div>
-                <div class="hobby-item fade-in">
-                    <i class="fas fa-hiking"></i>
-                    <h3>Hicking</h3>
-                    <p>some physical exersice</p>
+                <div class="hobby-item fade-in"> <i class="fas fa-hiking"></i>
+                    <h3>Hiking</h3>
+                    <p>Some physical exercise</p>
                 </div>
-
             </div>
         </div>
-    </section>
-
-
-    <!-- Contact Section -->
-
+    </section> <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="section-title fade-in">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info fade-in">
                     <h3>Let's Connect</h3>
-                    <p>I'am Aalwas open for work </p>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <strong>EMAIL</strong><br>
-                            kalluriabhinav972@gmail.com
-                        </div>
+                    <p>I’m always open for work opportunities and collaborations.</p>
+                    <div class="contact-item"> <i class="fas fa-envelope"></i>
+                        <div> <strong>Email</strong><br> kalluriabhinav972@gmail.com </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <strong>Phone</strong><br>
-                            +91 9381344521
-                        </div>
+                    <div class="contact-item"> <i class="fas fa-phone"></i>
+                        <div> <strong>Phone</strong><br> +91 9381344521 </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <strong>Location</strong><br>
-                            Hyderabad
-                        </div>
+                    <div class="contact-item"> <i class="fas fa-map-marker-alt"></i>
+                        <div> <strong>Location</strong><br> Hyderabad </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <strong>EMAIL</strong><br>
-                            kalluriabhinav972@gmail.com
-                        </div>
-                    </div>
-
-                    <div class="social-link">
-                        <a href="#linkedin"><i class="fab fa-linkedin"></i></a>
-                        <a href="#linkedin"><i class="fab fa-github"></i></a>
-                        <a href="#linkedin"><i class="fab fa-twitter"></i></a>
-                        <a href="#linkedin"><i class="fab fa-instagram"></i></a>
-                    </div>
-
-                    <div class="contact-form fade-in">
-                        <form>
-                            <div class="form-group">
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                            </div>
-                            <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" placeholder="Your.email" required>
-                            </div>
-                            <div class="form-group">
-                            <label for="subject">Subject:</label>
-                            <input type="Subject" id="subject" name="subject" placeholder="What's this about?" required>
-                            </div>
-                            <div class="form-group">
-                            <label for="messege">messege:</label>
-                            <textarea  id="messege" name="messege" placeholder="Your messege" required></textarea>
-                            </div>
-
-                            <button class="btn btn-primary" type="submit">
-                                <i class="fas fa-paper-plane"></i>
-                                send
-                            </button>
-                        </form>
-                    </div>
-
-
+                    <div class="social-links"> <a href="#"><i class="fab fa-linkedin"></i></a> <a href="#"><i
+                                class="fab fa-github"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a
+                            href="#"><i class="fab fa-instagram"></i></a> </div>
+                </div>
+                <div class="contact-form fade-in">
+                    <form>
+                        <div class="form-group"> <label for="name">Name:</label> <input type="text" id="name"
+                                name="name" placeholder="Your Name" required> </div>
+                        <div class="form-group"> <label for="email">Email:</label> <input type="email" id="email"
+                                name="email" placeholder="Your Email" required> </div>
+                        <div class="form-group"> <label for="subject">Subject:</label> <input type="text" id="subject"
+                                name="subject" placeholder="What's this about?" required> </div>
+                        <div class="form-group"> <label for="message">Message:</label> <textarea id="message"
+                                name="message" placeholder="Your message" required></textarea> </div> <button
+                            class="btn btn-primary" type="submit"> <i class="fas fa-paper-plane"></i> Send </button>
+                    </form>
                 </div>
             </div>
         </div>
-    </section>
+    </section> <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p><i class="fa-solid fa-copyright"></i> 2025 All rights reserved</p>
+        </div>
+    </footer>
 
-
-
-
-
-
-
-
-
-
-    <script src="script.js"></script>
 </body>
-
+<script src="script.js"></script>
 </html>
