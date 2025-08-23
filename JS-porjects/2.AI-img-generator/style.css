@@ -51,6 +51,7 @@ body {
     background: var(--color-gradient);
 }
 
+/* Header */
 .header {
     display: flex;
     gap: 18px;
@@ -92,9 +93,10 @@ body {
 .header .theme-toggle:hover {
     color: var(--color-primary);
     transform: translateY(-2px);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(92, 86, 225, 0.3);
 }
 
+/* Main Content */
 .main-content {
     margin: 35px 0 5px;
 }
@@ -138,14 +140,81 @@ body {
     color: #fff;
     font-size: 0.75rem;
     border-radius: 50%;
-    opacity: 0.8;
+    opacity: 0.85;
     background: var(--color-gradient);
     transition: all 0.3s ease;
 }
 
-
-.promt-container.prompt-btn:hover{
+.prompt-container .prompt-btn:hover {
     opacity: 1;
     transform: translateY(-2px);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 10px rgba(92, 86, 225, 0.4);
+    filter: brightness(1.1);
+}
+
+/* Prompt Actions */
+.main-content .prompt-actions {
+    display: grid;
+    gap: 14px;
+    grid-template-columns: 1.2fr 1fr 1.1fr 1fr;
+}
+
+.prompt-actions .select-wrapper {
+    position: relative;
+}
+
+.prompt-actions .select-wrapper::after {
+    content: "\f078";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9rem;
+    color: var(--color-placeholder);
+    pointer-events: none;
+}
+
+.prompt-actions :where(.custom-select, .generate-btn) {
+    cursor: pointer;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    background: var(--color-input);
+    border: 1px solid var(--color-border);
+    transition: all 0.3s ease;
+}
+
+/* Custom Select */
+.prompt-actions .custom-select {
+    width: 100%;
+    outline: none;
+    height: 100%;
+    appearance: none;
+}
+
+.prompt-actions .custom-select:is(:focus, :hover) {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+}
+
+/* Generate Button */
+.prompt-actions .generate-btn {
+    display: flex;
+    gap: 12px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    border: none;
+    color: #fff;
+    background: var(--color-gradient);
+    transition: all 0.3s ease;
+}
+
+.prompt-actions .generate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(92, 86, 225, 0.4);
+    filter: brightness(1.08);
 }
